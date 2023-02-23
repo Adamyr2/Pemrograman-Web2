@@ -1,28 +1,33 @@
 <?php 
 $mahasiswa1 = [
-    'id'=>'1', 
-    'NIM'=>01101212, 
-    'UTS'=>98,
-    'UAS'=>90,
-    'TUGAS'=>85,
+    'id'=>1,
+    'nim'=>01101212,
+    'nama'=>"Adam Malik",
+    'uts'=>90,
+    'uas'=>85,
+    'tugas'=>95,
 ];
 $mahasiswa2 = [
-    'id'=>'2', 
-    'NIM'=>01101122, 
-    'UTS'=>95,
-    'UAS'=>92,
-    'TUGAS'=>95,
+    'id'=>2,
+    'nim'=>0110123,
+    'nama'=>"Ziyad",
+    'uts'=>95,
+    'uas'=>90,
+    'tugas'=>95,
 ];
 $mahasiswa3 = [
-    'id'=>'3', 
-    'NIM'=>0110112, 
-    'UTS'=>90,
-    'UAS'=>90,
-    'TUGAS'=>85,
+    'id'=>3,
+    'nim'=>01101312,
+    'nama'=>"Aldi",
+    'uts'=>85,
+    'uas'=>85,
+    'tugas'=>90,
 ];
 
 $ar_nilai = [$mahasiswa1, $mahasiswa2, $mahasiswa3];
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,27 +38,31 @@ $ar_nilai = [$mahasiswa1, $mahasiswa2, $mahasiswa3];
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
 </head>
 <body>
+    
     <div class="container">
-        <h2>Data Mahasiswa</h2>
-        <table class="table table-hover">
+        <h3>Daftar Nilai Mahasiswa</h3>
+        <table class="table table-stripped">
             <tr>
                 <th>No</th>
-                <th>NIM</th>
+                <th>Nim</th>
+                <th>Nama</th>
                 <th>UTS</th>
                 <th>UAS</th>
                 <th>TUGAS</th>
             </tr>
             <?php foreach($ar_nilai as $nilai){ ?>
                 <tr>
-                    <td><?= $nilai['id'];?></td>
-                    <td><?= $nilai['NIM'];?></td>
-                    <td><?= $nilai['UTS'];?></td>
-                    <td><?= $nilai['UAS'];?></td>
-                    <td><?= $nilai['TUGAS'];?></td>
+                    <td><?= $nilai['id']; ?></td>
+                    <td><?= $nilai['nim']; ?></td>
+                    <td><?= $nilai['nama']; ?></td>
+                    <td><?= $nilai['uts']; ?></td>
+                    <td><?= $nilai['uas']; ?></td>
+                    <td><?= $nilai['tugas']; ?></td>
                 </tr>
             <?php } ?>
         </table>
     </div>
+
+
 </body>
 </html>
-
