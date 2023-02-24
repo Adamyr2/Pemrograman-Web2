@@ -8,43 +8,32 @@
 */
 # ini komentar pake kres
 
-// echo "Hello World <br>";
-// echo 'Hello World <br>';
-// print_r("Adam Malik <br>");
-// var_dump("STT Nurul Fikri");
+echo "Hello World <br>";
+echo 'Hello World <br>';
+print_r("Adam Yusron <br>");
+var_dump("STT NURUL FIKRI");
+echo "<hr>";
 
 
-// Membuat variabel User
 $nama = "Adam Malik";
 $umur = 19;
-$berat = 70.2;
+$berat = 65.2;
 $mahasiswa = true;
 
-// echo "Nama saya adalah $nama <br>";
-// echo "Umur saya $umur <br>";
-// echo "Berat badan saya mencapai $berat kg";
-
-// Membuat variabel Sistem
-// echo 'Dokumen Root '.$_SERVER["DOCUMENT_ROOT"];
-// echo "<br>";
-// echo 'Nama File '.$_SERVER["PHP_SELF"];
+echo "Nama saya $nama <br>";
+echo "Umur saya sekarang adalah $umur tahun <br>";
+echo "Berat saya $berat kg <br>";
+echo "<hr>";
 
 
-// Membuat variabel Konstanta
-define('PHI', 3.14);
-$jari = 10;
-$luas = PHI * $jari * $jari;
-$keliling = 2 * PHI * $jari;
-
-// echo "Luas lingkaran dengan jari-jari $jari = $luas <br>";
-// echo "Luas lingkaran dengan jari-jari $jari = $keliling";
-
-// Membuat Array
-$programs = ["PHP", "Javascript", "HTML", "CSS"];
-// echo $programs[0];
-// echo "Jumlah data variabel programs sebanyak " . count($programs);
-foreach($programs as $program){
-    echo "Bahasa $program <br>";
+// Membuat array
+$programs = ["php", "javascript", "html", "css"];
+echo $programs[0];
+foreach ($programs as $program){
+    echo $program;
 }
+
+
+
 
 ?>
