@@ -1,14 +1,16 @@
 <?php 
-$nama = $_GET['nama'];
-$matkul = $_GET['matkul'];
-$tugas = $_GET['tugas'];
-$uts = $_GET['uts'];
-$uas = $_GET['uas'];
+$nama = $_POST['nama'];
+$matkul = $_POST['matkul'];
+$tugas = $_POST['tugas'];
+$uts = $_POST['uts'];
+$uas = $_POST['uas'];
 $total_nilai = ($tugas + $uts + $uas) / 3;
 
-if($total_nilai > 75){
-    $keterangan = "LULUS";
-} else {
-    $keterangan = "Tidak LULUS";
+function Keterangan($nilai){
+    if($nilai > 75){
+        return "LULUS";
+    } else {
+        return "Tidak LULUS";
+    }
 }
 ?>
